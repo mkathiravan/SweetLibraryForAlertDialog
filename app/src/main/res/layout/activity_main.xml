@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:padding="30dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logobig"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"/>
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress_dialog"
+            style="@style/dialog_blue_button"
+            android:layout_below="@+id/logo_img"
+            android:layout_margin="10dp"
+            android:text="Progress Load"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/progress_dialog"
+            android:id="@+id/basic_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"/>
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/basic_test"
+            android:id="@+id/under_text_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message under Message"/>
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/under_text_test"
+            android:id="@+id/error_text_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Error Alert"/>
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/error_text_test"
+            android:id="@+id/success_text_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Success Alert"/>
+
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/success_text_test"
+            android:id="@+id/warning_confirm_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warning message with button"/>
+
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/warning_confirm_test"
+            android:id="@+id/warning_cancel_test"
+            style="@style/dialog_blue_button"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warning message with cancel and ok"/>
+
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/warning_cancel_test"
+            android:id="@+id/custom_img_test"
+            style="@style/dialog_blue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Message with Icon"/>
+
+    </RelativeLayout>
+</ScrollView>
